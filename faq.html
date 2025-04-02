@@ -1,7 +1,6 @@
-  <!DOCTYPE html>
-  <html lang="es">
-  <head>
-    <meta charset="UTF-8">
+<!DOCTYPE html>
+<html lang="es">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="SolarWave: Soluciones integrales de energía solar. Venta de placas solares de alta calidad, instalación profesional y servicios de mantenimiento para hogares y empresas.">
@@ -11,21 +10,43 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
     <title>Preguntas Frecuentes</title>
-  </head>
+</head>
 
+<body>
+    <div id="navbar-placeholder"></div>
+    <main class="altura">
+        <div class="container mt-5">
+            <h1>Preguntas Frecuentes sobre Placas Solares</h1>
 
-  <body>
-    <div class="container mt-5">
-      <h1>Preguntas Frecuentes sobre Placas Solares</h1>
-      <input type="text" id="search" placeholder="Buscar preguntas..." class="form-control my-3">
-      <button onclick="buscarPregunta()" class="btn btn-primary">Buscar</button>
-      <div id="faq-container"></div>
-    </div>
+            <!-- Buscador -->
+            <input type="text" id="search" placeholder="Buscar preguntas..." class="form-control my-3">
+            <button onclick="buscarPregunta()" class="btn btn-primary">Buscar</button>
+
+            <!-- Preguntas estáticas -->
+            <div id="faq-container">
+                <div class="faq-item">
+                    <h4>¿Qué son las placas solares y cómo funcionan?</h4>
+                    <p>Las placas solares transforman la luz solar en electricidad mediante celdas fotovoltaicas. La energía generada puede usarse directamente o almacenarse en baterías.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>¿Qué es la energía solar fotovoltaica?</h4>
+                    <p>La energía solar fotovoltaica es un tipo de energía renovable que utiliza celdas solares para convertir la luz solar en electricidad.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>¿Cómo funcionan los sistemas fotovoltaicos?</h4>
+                    <p>Los sistemas fotovoltaicos funcionan mediante celdas solares que capturan la energía solar y la transforman en corriente continua. Esta corriente se convierte en corriente alterna mediante un inversor para su uso en hogares y negocios.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Scripts -->
+    <script src="scriptNav.js"></script>
+    <script src="scriptFooter.js"></script>
+    <script src="scriptTranslate.js"></script>
     <script src="faq.js"></script>
-  </body>
-  </html>
-  
-
-
-
-
+</body>
+</html>

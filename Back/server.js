@@ -7,7 +7,7 @@ app.use(cors());
 
 app.get("/api/faq/buscar", (req, res) => {
   const query = req.query.q.toLowerCase();
-  const resultados = [];
+  const resultados = []; 
   
   faqs.forEach(categoria => {
     categoria.preguntas.forEach(pregunta => {

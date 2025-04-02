@@ -9,7 +9,25 @@ async function buscarPregunta() {
   }
 
   try {
-    const response = await fetch(`${API_URL}/buscar?q=${query}`);
+    const response = await fetch(`${API_URL}/buscar?q=${query}`); 
+    
+    /*${API_URL}/buscar?q=${query}:
+
+    Es el URL al que se envía la solicitud.
+    
+    Usa template literals (las comillas invertidas ``) para construir dinámicamente la URL.
+    
+    API_URL es una constante que contiene la base del URL del servidor (por ejemplo, http://localhost:8000/api).
+    
+    /buscar es el endpoint o ruta en el servidor donde se realiza la búsqueda.
+    
+    ?q=${query} es un parámetro de consulta (query parameter) que se pasa al servidor. Aquí:
+    
+    q es el nombre del parámetro.
+    
+    ${query} es el valor dinámico del parámetro, que probablemente contiene la palabra clave que deseas buscar.
+    
+    */
     if (!response.ok) throw new Error(`Error HTTP: ${response.status}`);
     
     const resultados = await response.json();
@@ -22,8 +40,12 @@ async function buscarPregunta() {
     }
 
     resultados.forEach(pregunta => {
-      const preguntaElemento = document.createElement("h3");
-      preguntaElemento.textContent = pregunta.pregunta;
+      const preguntaElemento = document.createElement("h4");
+      preguntaElemento.textContent = pregunta.pregunta; /*esta frase se refiere a faq.js {
+        pregunta: "¿Qué son las placas solares?",
+        respuesta: "Transforman luz solar en electricidad."
+      }
+      es decir el elemento pregunta que es ("¿Qué son las placas solares?") del onjeto pregunta*/
 
       const respuestaElemento = document.createElement("p");
       respuestaElemento.textContent = pregunta.respuesta;
