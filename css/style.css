@@ -901,6 +901,78 @@ background-color: transparent;
   min-height: 100vh;
 }
 
+.campo-busqueda {
+  display: grid;
+  grid-template-columns: repeat(1, 11fr) 1fr; /* Primera columna ocupa 11 partes, segunda columna ocupa 1 parte */
+  gap: 1rem; /* Espaciado entre las columnas */
+}
+
+
+.campo-busqueda .form-control{
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: wheat;
+  border: solid 0.2px black;
+}
+.contenido-busqueda{ /*Es el contenido de lo que hay en el main desde h2*/
+margin-top: 4rem;
+box-shadow: 0 4px 15px rgba(21, 31, 41, 0.7); 
+max-width: 80%;
+width: 100%;
+min-height: 100vh;
+background-color: rgba(27, 51, 34, 0.845); 
+border-radius: 0.5rem;
+border: 1px solid rgba(255, 255, 255, 0.1);
+margin-bottom: 1.5rem;
+
+
+h2 {
+  color: rgb(3, 26, 1);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  text-align: center;
+  size: var(--segundo-titulo);
+  margin-top: 1rem;
+  }
+}
+
+p {
+  font-size: var(--preguntas);
+  font-family: var(--parrafos);
+  color: black;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+h4{
+  color:  rgb(3, 26, 1);
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+
+.campo-busqueda .button-busqueda{
+  padding: 0.1rem;
+  height: 2.5rem;
+  margin-top: 0.5rem;
+  background-color: rgba(2, 15, 1, 0.548);
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s; /* Transiciones suaves */
+  /* Sombra inicial */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  }
+
+  .campo-busqueda .button-busqueda:hover {
+    background-color: rgb(1, 10, 0);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
+
+  /*Esto para quitar flash blanco del navegador por defecto*/
+  .campo-busqueda .button-busqueda::before,
+  .campo-busqueda .button-busqueda::after{
+  background-color: transparent;
+}
+
 /* Parte Faq fin*/
 
 /*Flecha Volver arriba inicio*/

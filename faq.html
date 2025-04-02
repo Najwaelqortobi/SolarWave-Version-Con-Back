@@ -15,13 +15,14 @@
 <body>
     <div id="navbar-placeholder"></div>
     <main class="altura">
-        <div class="container mt-5">
-            <h1>Preguntas Frecuentes sobre Placas Solares</h1>
+        <div class="container contenido-busqueda">
+            <h2 class="preguntas-faq">Preguntas Frecuentes sobre Placas Solares</h2>
 
             <!-- Buscador -->
-            <input type="text" id="search" placeholder="Buscar preguntas..." class="form-control my-3">
-            <button onclick="buscarPregunta()" class="btn btn-primary">Buscar</button>
-
+             <div class="campo-busqueda">
+            <input type="text" id="search" placeholder="Buscar preguntas..." class="form-control mt-2 mb-4">
+            <button class="button-busqueda" onclick="buscarPregunta()">Buscar</button>
+             </div>
             <!-- Preguntas estáticas -->
             <div id="faq-container">
                 <div class="faq-item">
