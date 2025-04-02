@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SolarWave: Soluciones integrales de energía solar. Venta de placas solares de alta calidad, instalación profesional y servicios de mantenimiento para hogares y empresas.">
+    <meta name="keywords" content="energía solar, placas fotovoltaicas, instalación solar, mantenimiento de paneles, eficiencia energética">
+    <meta name="author" content="SolarWave">    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>SolarWave</title>
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+    
+    <main class="container mt-5">
+        <section class="row mb-5">
+            <div class="col-12">
+                <div class="linea-con-h1">
+                    <div class="linea"></div>
+                    <h1 class="text-center mb-4" data-translate="quienes-somos-titulo">¿Quiénes Somos?</h1>
+                    <div class="linea"></div>
+                </div>
+                <div>
+                <p class="lead" data-translate="quien-somos" >
+                    En SolarWave, nos dedicamos a proporcionar soluciones innovadoras y sostenibles en energía solar para hogares y empresas.
+                    Fundada con el compromiso de promover el uso de energías limpias, nuestra empresa se enorgullece de ofrecer productos de alta calidad y servicios excepcionales.
+                    Creemos en un futuro más verde y trabajamos incansablemente para hacer que la energía solar sea accesible para todos.
+                </p>
+            </div>
+        </div>
+        </section>
+            <section class="row">
+                <!--card proyectos inicio-->
+                <section class="row mb-5">
+                    <div class="col-12">
+                        <div class="imagines">
+                            <div class="scroll">
+                                <!-- Primer conjunto de imágenes -->
+                                <img src="assets/Paneles Sobre Tejado.jpg" alt="Paneles Sobre Tejado">
+                                <img src="assets/Mantenimiento.jpg" alt="Mantenimiento">
+                                <img src="assets/Instalación.jpg" alt="Instalación">
+                                <img src="assets/seguimiento.jpg" alt="Seguimiento">
+                                <!-- Segundo conjunto de imágenes (duplicado) -->
+                                <img src="assets/Paneles Sobre Tejado.jpg" alt="Paneles Sobre Tejado">
+                                <img src="assets/Mantenimiento.jpg" alt="Mantenimiento">
+                                <img src="assets/Instalación.jpg" alt="Instalación">
+                                <img src="assets/seguimiento.jpg" alt="Seguimiento">
+                            </div>
+                </section>
+            </section>
+            
+        <!--card proyectos inicio-->
+        <section class="row mb-5">
+            <div class="col-12">
+                <div class="linea-con-h1">
+                    <div class="linea"></div>
+                    <h1 class="text-center mb-4" data-translate="proyectos-destacados-titulo">Proyectos destacados</h1>
+                    <div class="linea"></div>
+                </div>
+                <div id="proyectos-container" class="row productos_destacados g-4">
+                    <!-- Los proyectos se cargarán aquí dinámicamente desde el fichero Json que es cargarProyectos2.js que le cogen desde proyectos.js-->
+                </div>
+            </div>
+        </section>        
+        <!--card proyectos fin-->  
+    </main>
+
+       <!--flecha inicio-->
+    
+       <button id="scrollTopBtn" class="scroll-top-btn">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+    <!--flecha fin-->
+    <div id="footer-placeholder"></div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scriptNav.js"></script>
+    <script src="scriptFooter.js"></script>
+    
+    <script src="scriptTranslate.js"></script>
+    <script src="cargarProyectos2.js"></script>
+    <script src="flecha.js"></script>
+  
+  
+</body>
+</html>
+
+<!--Notas: 
+navbar-nav: Aplica estilos de Bootstrap para los elementos de la lista de navegación dentro de una navbar1.
+nav-item: Define cada elemento de la lista como un ítem de navegación2.
+dropdown-menu: Define el contenedor del menú desplegable2.
+dropdown-item: Aplica estilos a cada elemento dentro del menú desplegable2.-->
+
+<!--por lo de la traduccion ponemos los attributos en el footer y nav porque en el index llamamos solamente el footer y nav + los attributos para la traduccion que corresponden al index
+el siguiente paso es hacer la traduccion en Json y el ultimo es el script que se debe ligar con el index con script src
+por el Json esta ligado con el javascript con fetch-->

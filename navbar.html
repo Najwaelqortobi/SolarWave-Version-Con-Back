@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css"> <!--debo siempre poner el css despues css de bootstrap para que funciona lo que estoy sobreescribiendo-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <title>Navbar</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg"> <!--navbar para indicar que se trata de navbar /navbar-expand-lg se expandira en pantallas grandes
+        y se convierte ne button de menu en pantallas pequeñas-->
+        <div class="container">    
+         <div class="logo">
+            <img src="assets/logo.png" alt="Logo SolarWave" class="img-fluid" style="max-height: 110px;">
+        <!--img fluid para qua la talla de la imagen es decir (el ancho 100% y heigh auto) se adaptan al tamaño de la pantalla-->
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <!--data-bs-target=#navbarNav para ligar el button a la lista desplegable que tiene como id navbarNav-->
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <!-- Selector de idioma para móviles -->
+            <div class="language-selector mb-3"> 
+                <select>
+                    <option selected disabled data-translate="language">Idioma</option>
+                    <option value="es" data-translate="spanish">Español</option>
+                    <option value="eu" data-translate="basque">Euskara</option>
+                    <option value="en" data-translate="english">English</option>
+                    <option value="fr" data-translate="french">Français</option>
+                </select>
+            </div>
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item me-3"><!--nav-item: Define cada elemento de la lista como un ítem de navegación2-->
+                    <a class="nav-link" href="index.html" data-translate="home">Inicio</a><!--Aplica estilos a los enlaces dentro de la navegación2.-->
+                </li>
+                <li class="nav-item dropdown me-3">
+                    <a class="nav-link dropdown-toggle" href="#" id="productosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-translate="products">
+                        Productos
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-animated dropdown-menu-custom">
+                        <li><a class="dropdown-item" href="#" data-translate="solarPanels"><i class="fas fa-solar-panel me-2"></i>Placas Fotovoltaicas</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#" data-translate="accessories"><i class="fas fa-plug me-2"></i>Accesorios</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#" data-translate="packages"><i class="fas fa-box me-2"></i>Paquetes</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown me-3">
+                    <a class="nav-link dropdown-toggle" href="#" id="serviciosDropdown" role="button" data-bs-toggle="dropdown" data-translate="services">
+                        Servicios
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-animated dropdown-menu-custom">
+                        <li><a class="dropdown-item" href="#" data-translate="solarInstallation"><i class="fas fa-tools me-2"></i>Instalación de sistemas solares</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#" data-translate="maintenance"><i class="fas fa-wrench me-2"></i>Mantenimiento y reparación</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#" data-translate="energyConsulting"><i class="fas fa-lightbulb me-2"></i>Consultoría energética</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item me-3">
+                    <a class="nav-link" href="proyectosRealizados.html" data-translate="completedProjects">Proyectos Realizados</a>
+                </li>
+                <li class="nav-item me-3">
+                    <a class="nav-link" href="#" data-translate="blog">Blog</a>
+                </li>
+                <li class="nav-item me-3">
+                    <a class="nav-link" href="faq.html" data-translate="faq">FAQ</a>
+                </li>
+                <li class="nav-item me-3"> <!--me : margin end-->
+                    <a class="nav-link" href="contacto.html" data-translate="contact">Contacto</a>
+                </li>
+                <li class="nav-item me-3">
+                    <a class="nav-link" href="#" data-translate="clientArea">Área de Clientes</a>
+                </li>
+            </ul>
+        </div>
+        
+        
+        <!-- Botón de idiomas para pantallas grandes -->
+        
+    </div>
+    </nav>
+</body>
+</html>
+
+<!--Notas: 
+navbar-nav: Aplica estilos de Bootstrap para los elementos de la lista de navegación dentro de una navbar1.
+nav-item: Define cada elemento de la lista como un ítem de navegación2.
+dropdown-menu: Define el contenedor del menú desplegable2.
+dropdown-item: Aplica estilos a cada elemento dentro del menú desplegable2.-->
+<!--la estructura del nav es : un ul grande dentro hay 
+li** que son inicio productos servicios......
+dentro de un li (hay a donde esta escrito productos  +   ul>li*3 que son placas accesoories...)--> 

@@ -1,0 +1,24 @@
+{
+    "proyecto1": {
+      "nombre": "Proyecto Bilbao",
+      "descripcion": "Instalación solar innovadora en el corazón industrial de Bilbao, transformando tejados de fábricas en fuentes de energía limpia.",
+      "potencia": "5.5 kWp",
+      "imagen": "assets/Proyecto1.jpg",
+      "detalles": "Utiliza paneles solares bifaciales de última generación, que capturan la luz tanto por la parte frontal como por la trasera, aumentando la producción de energía en un 15% en comparación con los paneles convencionales."
+    },
+    "proyecto2": {
+      "nombre": "Proyecto Madrid",
+      "descripcion": "Sistema fotovoltaico de vanguardia en la capital, integrando paneles solares en edificios emblemáticos del skyline madrileño.",
+      "potencia": "6.2 kWp",
+      "imagen": "assets/proyecto2.jpg",
+      "detalles": "El proyecto incluye la instalación de sistemas de gestión energética inteligente que optimizan el consumo de energía en los edificios, reduciendo la demanda de energía y maximizando el aprovechamiento de la energía solar generada."
+    },
+    "proyecto3": {
+      "nombre": "Proyecto Barcelona",
+      "descripcion": "Solución energética sostenible en la Ciudad Condal, combinando eficiencia mediterránea con diseño urbano moderno.",
+      "potencia": "5.8 kWp",
+      "imagen": "assets/proyecto3.jpg",
+      "detalles": "Los paneles solares se adaptan a la arquitectura mediterránea de Barcelona, utilizando diseños y materiales que se integran armoniosamente en el entorno urbano. Se aprovechan las cubiertas planas y las terrazas para maximizar la captación de energía solar."
+    }
+  }
+  

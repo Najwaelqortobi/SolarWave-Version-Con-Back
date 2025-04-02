@@ -1,0 +1,48 @@
+{
+    "proyecto1": {
+      "nombre": "Proyecto Bilbao",
+      "descripcion": "Instalación solar innovadora en el corazón industrial de Bilbao, transformando tejados de fábricas en fuentes de energía limpia.",
+      "potencia": "5.5 kWp",
+      "imagen": "assets/Proyecto1.jpg",
+      "detalles": "Utiliza paneles solares bifaciales de última generación, que capturan la luz tanto por la parte frontal como por la trasera, aumentando la producción de energía en un 15% en comparación con los paneles convencionales."
+    },
+    "proyecto2": {
+      "nombre": "Proyecto Madrid",
+      "descripcion": "Sistema fotovoltaico de vanguardia en la capital, integrando paneles solares en edificios emblemáticos del skyline madrileño.",
+      "potencia": "6.2 kWp",
+      "imagen": "assets/proyecto2.jpg",
+      "detalles": "El proyecto incluye la instalación de sistemas de gestión energética inteligente que optimizan el consumo de energía en los edificios, reduciendo la demanda de energía y maximizando el aprovechamiento de la energía solar generada."
+    },
+    "proyecto3": {
+      "nombre": "Proyecto Barcelona",
+      "descripcion": "Solución energética sostenible en la Ciudad Condal, combinando eficiencia mediterránea con diseño urbano moderno.",
+      "potencia": "5.8 kWp",
+      "imagen": "assets/proyecto3.jpg",
+      "detalles": "Los paneles solares se adaptan a la arquitectura mediterránea de Barcelona, utilizando diseños y materiales que se integran armoniosamente en el entorno urbano. Se aprovechan las cubiertas planas y las terrazas para maximizar la captación de energía solar."
+    },
+    "proyecto4": {
+    "nombre": "Proyecto Valencia",
+    "descripcion": "Innovador sistema de energía solar flotante en el puerto de Valencia, aprovechando el espacio marítimo para la generación de energía limpia.",
+    "potencia": "7.3 kWp",
+    "imagen": "assets/proyecto4.jpg",
+    "detalles": "Utiliza paneles solares especialmente diseñados para resistir la corrosión marina y el oleaje. El sistema incluye un mecanismo de seguimiento solar que ajusta la orientación de los paneles para maximizar la captación de energía a lo largo del día."
+},
+
+    "proyecto5": {
+    "nombre": "Proyecto Sevilla",
+    "descripcion": "Integración de energía solar en el patrimonio histórico de Sevilla, combinando tecnología moderna con arquitectura tradicional andaluza.",
+    "potencia": "4.9 kWp",
+    "imagen": "assets/proyecto5.jpg",
+    "detalles": "Los paneles solares se han diseñado para imitar la apariencia de las tejas tradicionales, preservando la estética de los edificios históricos. El sistema incluye baterías de almacenamiento de última generación para optimizar el uso de la energía solar durante las horas nocturnas."
+},
+
+    "proyecto6": {
+    "nombre": "Proyecto Zaragoza",
+    "descripcion": "Parque solar urbano multifuncional en Zaragoza, combinando generación de energía con espacios públicos verdes.",
+    "potencia": "8.1 kWp",
+    "imagen": "assets/proyecto6.jpg",
+    "detalles": "El proyecto integra paneles solares en estructuras que proporcionan sombra y refugio en un parque público. Incluye estaciones de carga para vehículos eléctricos y un sistema de iluminación LED alimentado por energía solar, creando un espacio urbano autosuficiente energéticamente."
+}
+    }
+
+  
