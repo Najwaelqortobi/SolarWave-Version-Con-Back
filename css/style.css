@@ -164,7 +164,7 @@ no se descoloca arriba porque es mas largo la traduccion en euskera con eso lo a
 
 
 /*responsive al buton idioma inicio */
-@media(wodth:795px){
+@media(width:795px){
 .responsive{
   max-width: 100%;
 }
@@ -197,12 +197,6 @@ no se descoloca arriba porque es mas largo la traduccion en euskera con eso lo a
   width: 100%;
   text-align: left;
   padding: 0.5rem 1rem;
-}
-
-.navbar-nav .dropdown-menu {
-  background-color: transparent;
-  border: none;
-  padding: 0;
 }
 
 .navbar-nav .dropdown-item {
@@ -252,7 +246,6 @@ no se descoloca arriba porque es mas largo la traduccion en euskera con eso lo a
   margin: 0;
 }
 }
-
 @media (min-width: 992px) {
 .navbar .language-selector {
     position: absolute;
@@ -261,6 +254,35 @@ no se descoloca arriba porque es mas largo la traduccion en euskera con eso lo a
     transform: translateY(-50%);
 }
 }
+/*button buscar del faq*/
+
+@media (max-width: 926px) {  
+  .campo-busqueda .form-control {  
+    width: 99%;  
+  }  
+
+  .campo-busqueda {  
+    margin-right: 1rem;  
+  }  
+
+/*Es para eliminar los estilos definidos por defecto por bootstrap aunque no puse la clase btn en el button*/
+  .campo-busqueda .button-busqueda {  
+    all: unset;
+  }
+
+
+.container.contenido-busqueda .campo-busqueda button.button-busqueda {  
+  text-align: center;  
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
+  margin-left: 1rem;
+  color: wheat;
+  border: var(--border-button);  
+  border-radius: var(--border-radius-button);
+  text-align: center;
+}  
+ /* Reset completo solo para el botón "Buscar" fin */  
+  }  
 
 /* Estilos para pantallas entre 1011px y 1510px */
 @media (1011px <= width <= 1395px) {
@@ -834,7 +856,7 @@ background-color: transparent;
 border-color: #081b05;
 box-shadow: none;
 outline: none;
-color: #495057;
+color: white;
 }
 .contenido {
 box-shadow: 0 4px 15px rgba(21, 31, 41, 0.7); 
