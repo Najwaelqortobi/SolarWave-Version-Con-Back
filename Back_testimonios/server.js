@@ -19,7 +19,7 @@ const pool = new Pool({
 app.get('/api/testimonios', async (req, res) => {
     console.log('GET /api/testimonios llamado');
     try {
-        const result = await pool.query('SELECT * FROM testimonios ORDER BY fecha DESC');
+    const result = await pool.query('SELECT * FROM testimonios.testimonios ORDER BY fecha DESC');
         console.log('Testimonios obtenidos:', result.rows.length); // Muestra cuántos registros hay
         res.json(result.rows);
     } catch (err) {
