@@ -33,6 +33,7 @@
   --color-background-transparente-contact : rgba(27, 51, 34, 0.692); 
   /* color-mix(in srgb, color-mix(in srgb, #153452 40%, #3a4a5a 35%), #121921 20%); es el color que habia antes azul*/
   --preguntas: 1.3rem; 
+  --color-green-title: rgb(3, 26, 1)
 }
      
 
@@ -997,34 +998,67 @@ h4{
 
 /* Parte Faq fin*/
 
-/*Parte testimonios Inici*/
+/*Parte testimonios Inicio*/
 
-.testimonial-card {
-    background: #120101;
-    border-radius: 1rem;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.07);
-    padding: 1.5rem 2rem;
-    margin-bottom: 1.5rem;
-    transition: box-shadow 0.2s;
+.text-gradient {
+    color: var(--color-green-title);
 }
-.testimonial-card:hover {
-    box-shadow: 0 8px 32px rgba(0,0,0,0.12);
-}
-.author {
+
+.text-opinion {
+    color: var(--color-green-title);
+    font-size: 2rem;
     font-weight: bold;
-    color: #198754;
 }
-.date {
-    color: #6c757d;
-    font-size: 0.95em;
+
+.bg-glass {
+    background: var(--color-background-transparente-contact);
 }
-.response {
-    background: #121313;
-    border-left: 4px solid #198754;
-    padding: 0.75rem 1rem;
-    border-radius: 0.5rem;
-    margin-top: 0.7rem;
-    font-size: 0.97em;
+
+.label{
+  color:rgb(13, 25, 1);
+  font-weight: bold;
+}
+.btn-gradient {
+    background: #0a1000b6;
+    transition: background 0.3s, box-shadow 0.3s;
+    color: white;
+    font-size: 1rem;
+    font-family:cursive;
+}
+.btn-gradient:hover {
+background-color:  #213407df;
+transform: translateY(-0.9px);
+box-shadow: 0 7px 14px rgba(0, 0, 0, 0.18), 0 5px 5px rgba(0, 0, 0, 0.12);/*rgba 2 veces es como son 2 capas de sombra*/
+}
+
+.testimonial-card{
+  background-color:rgba(20, 14, 16, 0.793);
+  border-radius: var(--border-radius-button);
+  color: wheat;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.colorin{
+  color: white;
+  font-size: var(--parrafos-size);
+  font-family: cursive;
+}
+
+/* Responsive ajustes */
+@media (max-width: 768px) {
+    .testimonial-card {
+        padding: 1.2rem 1rem;
+    }
+}
+@media (max-width: 576px) {
+    .testimonial-card {
+        padding: 1rem 0.5rem;
+        font-size: 0.97em;
+    }
+    .author, .date {
+        font-size: 1em;
+    }
 }
 
 /*Parte testimonios fin*/

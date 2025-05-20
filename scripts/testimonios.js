@@ -14,7 +14,7 @@ async function cargarTestimonios() {
                         <span class="author">${t.nombre}</span>
                         <span class="date">${new Date(t.fecha).toLocaleDateString()}</span>
                     </div>
-                    <p class="mt-2 mb-1">${t.comentario}</p>
+                    <p class="mt-2 mb-1 colorin">${t.comentario}</p>
                 </div>
             `;
         });
