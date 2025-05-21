@@ -584,6 +584,85 @@ padding-left: 0.2rem;
 }
 /*Footer fin*/
 
+/*Parte placas fotovoltaicas inicio*/
+.solar-card {
+    transition: transform 0.2s, box-shadow 0.2s;
+    border-radius: 18px;
+    overflow: hidden;
+    background: var(--color-background-card);
+}
+
+.solar-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 8px 32px rgba(0, 123, 255, 0.2), 0 1.5px 6px rgba(0,0,0,0.08);
+}
+
+.solar-card .img-container {
+    background: var(--color-background-card);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 180px;
+    overflow: hidden;
+}
+
+.solar-card .card-img-top {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.4s;
+}
+
+.nombre-placa{
+  color: var(--background-color-button);
+
+} 
+.badge {
+    font-size: 1em;
+    padding: 0.6em 1.2em;
+    border-radius: 1em;
+    font-weight: bold;
+}
+
+.solar-card .btn-outline-primary {
+    border-radius: 2em;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: background 0.2s, color 0.2s;
+}
+
+
+.tipo-badge {
+    background: linear-gradient(45deg, var(--color-a-card-start), var(--color-a-card-end));
+    color: #fff;
+    transform: scale(1); /* Estado base */
+    font-family: cursive;
+}
+
+
+.solar-card .img-container {
+    width: 100%;
+    height: 20rem; /* para que las imagenes ocupan el mismo ancho */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.solar-card .card-img-top {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ocupa el espacio y recorta si es necesario */
+    transition: transform 0.4s;
+}
+
+
+.txt-desc{
+  text-align: center;
+  font-size: 1.2rem;
+}
+/*Parte placas fotovoltaicas Fin*/
 
 /*Parte detalle productos inicio*/
 .cuarto-titulo{
