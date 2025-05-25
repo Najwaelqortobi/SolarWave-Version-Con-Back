@@ -1010,8 +1010,264 @@ Al poner flex-shrink: 0; en .timeline-bar, le indicas al navegador que la barra 
     padding: 1.1rem 0.5rem;
   }
 }
-
 /*Parte Instalacion Fin*/
+
+/*Parte mantenimiento Inicio*/
+/* Títulos */
+
+.cont-contenido{
+  display: grid;
+  grid-template-columns: 2fr, 1fr;
+  gap: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.parrafo-mantenimiento0{
+  font-size: 13rem;
+
+}
+.descr-instal p{
+width: 80%;
+gap: 3;
+line-height: 1.8;
+
+}
+.servicio-mantenimiento h4 {
+  font-family: var(--primer-titulo);
+  color: var(--color-a-card-start);
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-shadow: 0 2px 8px rgba(90,127,255,0.07);
+}
+
+/* Lista de mantenimiento */
+.lista-mantenimiento li {
+  font-size: 1.09rem;
+  margin-bottom: 0.65rem;
+  font-family: var(--parrafos);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: var(--color-background-card);
+  border-radius: 12px;
+  padding: 0.6rem 1rem;
+  box-shadow: 0 2px 8px rgba(90,127,255,0.07);
+  transition: background 0.22s, box-shadow 0.22s, transform 0.22s;
+  cursor: pointer;
+}
+
+.lista-mantenimiento li:hover {
+  background:var(--color-a-card-end);
+  box-shadow: 0 4px 24px rgba(90,127,255,0.13);
+  transform: translateY(-3px) scale(1.03);
+}
+
+.icono-mant {
+  color: var(--color-a-card-end);
+  background: var(--color-background-card);
+  border-radius: 50%;
+  width: 2.2rem;
+  height: 2.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  box-shadow: 0 1px 8px rgba(90,127,255,0.11);
+  transition: background 0.2s, color 0.2s;
+}
+
+.lista-mantenimiento li:hover .icono-mant {
+  background: var(--color-a-card-end);
+  color: #fff;
+}
+
+/* Botón de solicitar revisión */
+
+.btn-solicitarRevision {
+  text-align: center;
+  width: 100%;
+  margin: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.btn-solicitarRevision .btn {
+  background:  linear-gradient(90deg, #063842 0%, #01273b 100%);
+  border-radius: 50px;
+  border: none;
+  padding: 12px 38px;
+  font-size: 1.15rem;
+  color: #fff;
+  letter-spacing: 1.2px;
+  font-weight: 600;
+  box-shadow: 0 8px 28px rgba(0, 119, 182, 0.22), 0 4px 16px rgba(0, 180, 216, 0.16);
+  transition: background 0.35s cubic-bezier(.4,2,.3,1),box-shadow 0.25s,transform 0.22s;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-solicitarRevision .btn::after {
+  content: "";
+  position: absolute;
+  left: -75%;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(120deg,rgba(255,255,255,0.22) 0%,rgba(255,255,255,0.09) 100%);
+  transform: skewX(-25deg);
+  transition: left 0.4s cubic-bezier(.4,2,.3,1);
+}
+
+.btn-solicitarRevision .btn:hover,
+.btn-solicitarRevision .btn:focus {
+  background:  var(--background-color-button);
+  box-shadow: 0 4px 18px rgba(0, 119, 182, 0.18), 0 2px 8px rgba(0, 180, 216, 0.12);
+  transform: translateY(-2px) scale(1.045);
+}
+
+.btn-solicitarRevision .btn:hover::after,
+.btn-solicitarRevision .btn:focus::after {
+  left: 120%;
+}
+
+@media (max-width: 600px) {
+  .btn-solicitarRevision .btn {
+    font-size: 1rem;
+    padding: 10px 18px;
+  }
+}
+
+
+/* Ventajas */
+.card-ventaja {
+  border-radius: 18px;
+  background: var(--color-background-card);
+  transition: transform 0.22s, box-shadow 0.22s;
+  box-shadow: 0 2px 12px rgba(90,127,255,0.09);
+  border: none;
+}
+.card-ventaja:hover {
+  transform: translateY(-8px) scale(1.04);
+  box-shadow: 0 8px 32px rgba(90,127,255,0.16);
+}
+.icono-ventaja {
+  color: var(--color-a-card-end);
+  background: var(--color-background-card);
+  border-radius: 50%;
+  padding: 0.6rem;
+  box-shadow: 0 1px 6px rgba(90,127,255,0.08);
+  margin-bottom: 0.7rem;
+  transition: background 0.2s, color 0.2s;
+}
+.card-ventaja:hover .icono-ventaja {
+  background: var(--color-a-card-end);
+  color: #fff;
+}
+
+.alert-info {
+  background: var(--color-a-card-end);
+  color: var(--color-a-card-start);
+  font-family: var(--parrafos);
+  font-size: 1.08rem;
+  border: none;
+  box-shadow: 0 2px 12px rgba(90,127,255,0.09);
+  width: 80%;
+  overflow: hidden;
+  margin-top: 2rem;
+}
+
+h4.text-center {
+  color: black;
+}
+
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .servicio-mantenimiento .col-lg-7 {
+    padding-right: 1.5rem;
+  }
+    .descr-instal p{
+width: 100%;
+gap: 3;
+line-height: 1;
+
+}
+}
+
+@media (max-width: 991px) {
+  .servicio-mantenimiento .col-lg-7,
+  .servicio-mantenimiento .col-lg-5 {
+    padding: 0 1rem;
+  }
+  .servicio-mantenimiento .col-lg-5 {
+    margin-bottom: 2rem;
+  }
+
+.descr-instal p{
+width: 80%;
+gap: 3;
+line-height: 1.5;
+
+}
+}
+@media (max-width: 900px) {
+  .cont-contenido {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+  .col-lg-7, .descr-instal {
+    width: 100%;
+  }
+  .descr-instal p{
+width: 80%;
+gap: 3;
+line-height: 1.3;
+
+}
+}
+
+@media (max-width: 767px) {
+  .servicio-mantenimiento h3, .servicio-mantenimiento h4 {
+    font-size: 1.22rem;
+    text-align: center;
+  }
+  .lista-mantenimiento li {
+    font-size: 1rem;
+    padding: 0.5rem 0.7rem;
+  }
+  .btn-solicitarRevision {
+    margin: 1.2rem 0 0 0;
+  }
+  .card-ventaja {
+    margin-bottom: 1rem;
+  }
+  .servicio-mantenimiento .row.mt-5 {
+    margin-top: 2.2rem;
+  }
+
+}
+
+@media (max-width: 575px) {
+  .servicio-mantenimiento .container {
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+  }
+  .lista-mantenimiento li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.2rem;
+    padding: 0.45rem 0.5rem;
+  }
+  .btn-solicitarRevision .btn {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
+/*Mantenimiento parte Fin*/
+
+
 /*Footer fin*/
 
 /*media queruy por el subscribe footer inicio*/
